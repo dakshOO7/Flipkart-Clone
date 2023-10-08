@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+.navigation {
+    height: 44px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #2874f0;
+    color: white;
+    padding-top: 6px;
+    justify-content: center;
+    /* position: fixed;
+    z-index: 1; */
+
+}
+
+@keyframes ani1 {
+    from {
+        transform: translate(-30px);
+    }
+
+    to {
+        transform: translate(140px);
+    }
+
+}
+
+.flipkartpic {
+    height: 40px;
+    width: 80px;
+    animation-name: ani1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+
+}
+
+.mainvav {
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.sidenav {
+    margin-right: 30px;
+    font-family: 'Handjet', cursive;
+}
+
+.sidenav1 {
+    display: inline;
+    width: -1px;
+    padding-top: 10px;
+    margin-right: 10px;
+    font-family: 'Handjet', cursive;
+}
+
+.searchbar {}
+
+.sidenav2 {
+    padding-top: 10px;
+    margin-right: 150px;
+}
+
+button {
+    font-family: 'Handjet', cursive;
+    width: 70px;
+    color: #2874f0;
+    font-weight: 5000;
+}
+
+.sidenav3 {
+    padding-top: 10px;
+    margin-right: 139px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.sidenav4 {
+    padding-top: 10px;
+    margin-right: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.sidenav5 {
+    padding-top: 10px;
+    margin-right: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Header */
+
+.container {
+    background-color: white;
+    height: 17vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+.grocery,
+.mobiles,
+.fashion,
+.electronics,
+.homefurniture,
+.appliances,
+.travel,
+.topoffers,
+.beautytoys,
+.twowheelers {
+    margin-bottom: 10px;
+    font-family: 'Handjet', cursive;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.grocery1 {
+    position: absolute;
+    bottom: 30px;
+    left: 55px;
+}
+
+.mobiles1 {
+    position: absolute;
+    bottom: 30px;
+    left: 173px;
+}
+
+.fashion1 {
+    position: absolute;
+    bottom: 30px;
+    left: 290px;
+}
+
+.electronics1 {
+    position: absolute;
+    bottom: 30px;
+    left: 415px;
+}
+
+.homefurniture1 {
+    position: absolute;
+    bottom: 25px;
+    left: 550px;
+}
+
+.appliances1 {
+    position: absolute;
+    bottom: 25px;
+    left: 720px;
+}
+
+.travel1 {
+    position: absolute;
+    bottom: 30px;
+    left: 845px;
+}
+
+.topoffers1 {
+    position: absolute;
+    bottom: 30px;
+    left: 950px;
+}
+
+.beautytoys1 {
+    position: absolute;
+    bottom: 25px;
+    left: 1100px;
+}
+
+.twowheelers1 {
+    position: absolute;
+    bottom: 25px;
+    left: 1285px;
+}
+
+/* Slider */
+
+.slider {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sliderimg1,
+.sliderimg2,
+.sliderimg3 {
+    margin-right: 1px;
+    animation: slide 5s alternate-reverse infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main */
+
+/* Font attributes for Main*/
+.mainfont1 {
+    margin-top: 60%;
+    margin-left: 15%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #212121;
+}
+
+.mainfont2 {
+    font-size: 14px;
+    font-family: 'Lumanosimo', cursive;
+    color: #212121;
+    position: absolute;
+    bottom: 125px;
+    left: 70px;
+
+}
+
+.sidefont1 {
+    font-size: 16px;
+    font-family: 'Lumanosimo', cursive;
+    color: #388e3c;
+    position: absolute;
+    bottom: 90px;
+    left: 60px;
+
+
+}
+
+.sidefont2 {
+    font-size: 14px;
+    font-family: 'Lumanosimo', cursive;
+    color: #212121;
+    position: absolute;
+    bottom: 50px;
+    left: 45px;
+
+}
+
+.buttonfont {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    padding: -1px 24px;
+    background-color: #2874f0;
+    color: white;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+
+/* Container1 */
+.container1 {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* Div attributes  */
+.BOE,
+.projectors,
+.mirrorlesscamera,
+.monitors,
+.bestoftrimmers,
+.airindiaAd {
+    margin-top: 5px;
+    width: 30vh;
+    position: relative;
+}
+
+.airindiaAd {
+    background-image: url(Images/airindia.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* Img attributes */
+.projectorimg {
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+
+.cameraimg {
+    position: absolute;
+    top: 50px;
+    left: 35px;
+}
+
+.monitorimg {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.trimmerimg {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+}
+
+/* Container 2 */
+.container2 {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* Div attributes */
+.TD,
+.ipads,
+.instaxcamera,
+.printers,
+.camerabags,
+.GoPro {
+    margin-top: 5px;
+    width: 30vh;
+    position: relative;
+}
+
+/* Img attributes */
+.ipadimg {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+.instaximg {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.printersimg {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+.camerabagsimg {
+    position: absolute;
+    top: 50px;
+    left: 65px;
+}
+
+.GoProimg {
+    position: absolute;
+    top: 70px;
+    left: 12px;
+    right: 2px;
+}
+
+/* Container 3 */
+.container3 {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* Div Attributes */
+
+.Riding,
+.helmet,
+.gloves,
+.jackets,
+.tankbags,
+.mobileholder {
+    margin-top: 5px;
+    width: 30vh;
+    position: relative;
+}
+
+/* Img Attributes */
+
+.helmetimg {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+.glovesimg {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+.jacketsimg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.tankbagsimg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.mobileholderimg {
+    position: absolute;
+    top: 50px;
+    left: 45px;
+}
+
+/* Container 4 */
+.container4 {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+/* Div Attributes */
+.PYS,
+.shirts,
+.Watches,
+.Shoes,
+.Jewellery,
+.suitcase {
+    margin-top: 5px;
+    width: 30vh;
+    position: relative;
+}
+
+/* Img Attributes */
+.shirtsimg {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.Watchesimg {
+    position: absolute;
+    top: 45px;
+    left: 50px;
+}
+
+.Shoesimg {
+    position: absolute;
+    top: 70px;
+    left: 5px;
+}
+
+.Jewelleryimg {
+    position: absolute;
+    top: 55px;
+    left: 45px;
+}
+
+.suitcaseimg {
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+
+/* Brand Directory */
+
+.branddirectory {
+    width: 100vw;
+    margin-left: 10px;
+    padding-left: 4px;
+
+}
+
+.bdfont1 {
+    font-family: 'Dai Banna SIL', serif;
+    color: #848484;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.bdfont2 {
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 10px;
+}
+
+.bdfont3 {
+    font-family: 'Dai Banna SIL', serif;
+    color: #848484;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.bdfont4 {
+    font-family: 'Lora', serif;
+    color: darkgray;
+    font-size: 13px;
+}
+
+/* Footer */
+/* Footer 1 */
+h5 {
+    color: #878787;
+}
+
+.footer1 {
+    background-color: #172337;
+    height: 33vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+
+.about,
+.help,
+.consumerpolicy,
+.social,
+.mailus,
+.officeadress {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.footer1font {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    margin-top: 5px;
+    text-transform: capitalize;
+
+}
+
+/* Footer 2 */
+.footer2 {
+    margin-top: 0.5px;
+    background-color: #172337;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    position: relative;
+}
+
+.footer2font {
+    margin-top: 20px;
+}
+
+.becomesellerimg {
+    position: absolute;
+    top: 20px;
+    left: 27px;
+}
+
+.advertiseimg {
+    position: absolute;
+    top: 20px;
+    left: 230px;
+}
+
+.giftcardsimg {
+    position: absolute;
+    top: 20px;
+    left: 385px;
+}
+
+.helpcenterimg {
+    position: absolute;
+    top: 20px;
+    left: 550px;
+}
